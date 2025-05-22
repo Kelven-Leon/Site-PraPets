@@ -1,0 +1,128 @@
+/* form.css */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #a1fca6, #f59622, #5ed5f394 );
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    width: 320px;
+    text-align: center;
+     animation: fadeInUp 0.8s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.login-logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+
+h2 {
+    margin-bottom: 20px;
+    color: #2e7d32;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    text-align: left;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /*está arredondando */
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+    outline: none;
+    border-radius: 8px; /*está arredondando */
+    margin-bottom: 15px;
+    
+}
+
+/* Animação suave ao passar o mouse */
+button:hover,
+input[type="submit"]:hover {
+    background-color: #45a049;
+    transform: scale(1.03);
+}
+
+
+
+button {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
+
+p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #444;
+}
+
+a {
+    color: #2e7d32;
+    font-weight: bold;
+    transition: color 0.3s;
+    
+}
+
+a:hover {
+    color: #256429;
+    text-decoration: underline;
+}
+
+@media (max-width: 400px) {
+    .form-container {
+        width: 90%;
+        padding: 30px 20px;
+    }
+}

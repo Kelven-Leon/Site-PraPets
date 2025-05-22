@@ -1,0 +1,121 @@
+/* Remove .container antiga, pois não é mais usada */
+
+/* Corpo */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #e6f7e6; /* tom mais suave para o fundo */
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #2e7d32;
+  margin-top: 40px;
+  font-size: 2.5rem; /* aumento do tamanho do título */
+  letter-spacing: 1px; /* espaçamento nas letras para melhorar a legibilidade */
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px; /* maior largura para dar mais espaçamento */
+  margin: 40px auto;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.text-section {
+  flex: 1;
+  min-width: 300px;
+}
+
+.text-section p {
+  font-size: 1.8rem; /* tamanho de fonte ajustado */
+  margin-bottom: 20px;
+}
+
+.text-section h2 {
+  margin-top: 20px;
+  font-size: 2.2rem;
+}
+
+.form-section {
+  flex: 1;
+  min-width: 300px;
+  background: #fff;
+  padding: 30px; /* mais padding para maior área de clique */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.form-section:hover {
+  transform: translateY(-5px); /* efeito sutil de elevação */
+}
+
+.form-section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #2e7d32;
+}
+
+.form-section label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+.form-section input {
+  width: 100%;
+  padding: 10px; /* maior padding para mais conforto no preenchimento */
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.form-section input:focus {
+  border-color: #43a047; /* destaque ao focar nos campos */
+}
+
+.form-section button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 15px;
+  font-size: 1rem;
+  color: white;
+  background-color: #43a047;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-section button:hover {
+  background-color: #388e3c;
+  transform: scale(1.05); /* efeito de aumentar o botão ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+  .main-content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .form-section {
+      padding: 20px; /* menos padding em dispositivos móveis */
+  }
+
+  .text-section p {
+      font-size: 1.6rem; /* tamanho de fonte ajustado para mobile */
+  }
+}
+
+  
+  
+  

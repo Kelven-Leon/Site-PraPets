@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #fefefe;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.btn-voltar {
+  background-color: #2e8b57;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.btn-voltar:hover {
+  background-color: #276b45;
+}
+
+h1 {
+  text-align: center;
+  color: #2e8b57;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.dica-item {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+
+.dica-item img {
+  width: 100%;
+  max-height: 750px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.dica-item h2 {
+  color: #ff6600;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.dica-item p {
+  line-height: 1.6;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.lista-dicas {
+  padding-left: 20px;
+}
+
+.lista-dicas li {
+  margin-bottom: 8px;
+  font-size: 1.5em;
+}
+
+/* Rodapé bonito e organizado */
+.footer {
+  background: linear-gradient(to right, #2e8b57, #ff9933);
+  color: #f1f1f1;
+  padding: 20px 10px;
+  border-top: 2px solid #a4d4a0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+  min-width: 250px;
+  font-size: 1.1em;
+}
+
+.footer-logo {
+  width: 60px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  margin-bottom: 4px;
+}
+
+.footer-section h3 {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1em;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+  font-size: 1.1em;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+  
+}
+
+@media (max-width: 768px) {
+  .dica-item img {
+    max-height: 200px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+}
+#rodape{
+  text-align: center ;
+  color: #f8fcfa;
+}
